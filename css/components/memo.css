@@ -1,0 +1,41 @@
+#memo input {
+	width: 100%;
+	height: 80px;
+	padding: 5px;
+	border-radius: 20px;
+	text-align: center;
+	font-size: var(--default);
+	color: var(--cornfb);
+}
+
+#memo input::placeholder {
+	font-size: var(--small);
+	font-style: italic;
+	color: var(--light-gray);
+}
+
+#memo-list {
+	height: 95%;
+	margin: 10px 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#memo-list li {
+	text-transform: none;
+	margin-bottom: 8px;
+	font-size: var(--default);
+}
+
+#memo-list button {
+	all: unset;
+	margin-left: 5px;
+	font-size: var(--small);
+	color: var(--light-gray);
+	cursor: pointer;
+}
+
+#memo-list button:hover {
+	color: var(--cornfb);
+}

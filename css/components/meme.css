@@ -1,0 +1,117 @@
+#meme {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+canvas {
+	width: 450px;
+	height: 450px;
+	background-color: white;
+	border: 1px solid var(--cornfb);
+	border-radius: 40px;
+	margin: 5px 0px;
+}
+
+.colors {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.color-options {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.color-option {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 5px;
+	transition: transform ease-in-out 0.1s;
+	box-shadow: 3px 3px 0px 0px white;
+}
+
+.color-option:hover {
+	transform: scale(1.2);
+	box-shadow: 3px 3px 0px 0px var(--cornfb);
+}
+
+.fa-pen-ruler {
+	color: var(--cornfb);
+}
+
+.meme-btns {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#btn-mode {
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 25px 0px;
+}
+
+#meme button,
+#meme label {
+	all: unset;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: var(--default);
+	color: white;
+	background-color: var(--cornfb);
+	box-shadow: 3px 3px 0px 0px white;
+	cursor: pointer;
+	transition: color linear 0.3s, background-color linear 0.3s;
+}
+
+#meme label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#meme button:hover,
+#meme label:hover {
+	color: var(--cornfb);
+	background-color: white;
+	box-shadow: 3px 3px 0px 0px var(--cornfb);
+}
+
+input#meme-file {
+	display: none;
+}
+
+input#meme-text {
+	all: unset;
+	text-align: center;
+	padding: 5px 20px;
+	border-radius: 20px;
+	font-size: var(--medium);
+	background-color: white;
+	color: var(--cornfb);
+	border: 1px solid white;
+}
+
+input#meme-text::placeholder {
+	font-size: var(--small);
+	font-style: italic;
+	color: var(--light-gray);
+}
+
+input#meme-text:focus-within {
+	border: 1px solid var(--cornfb);
+}

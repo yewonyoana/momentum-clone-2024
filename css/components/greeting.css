@@ -1,0 +1,65 @@
+#greeting-box {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#greeting {
+	font-size: var(--xlarge);
+	font-weight: 800;
+}
+
+.nav-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+}
+
+.nav-btn img {
+	width: 80px;
+}
+
+.btn-text {
+	font-size: var(--medium);
+	color: var(--light-gray);
+	position: absolute;
+	display: none;
+}
+
+.btn-text {
+	top: 60px;
+	right: -39px;
+}
+
+.nav-btn:first-child .btn-text {
+	right: -17px;
+}
+
+.nav-btn:hover {
+	animation: navBtnRotate 2s linear infinite;
+}
+
+.nav-btn:hover .btn-text {
+	display: unset;
+}
+
+@keyframes navBtnRotate {
+	0% {
+		transform: rotateZ(0);
+	}
+	25% {
+		transform: rotateZ(10deg);
+	}
+	50% {
+		transform: rotateZ(0);
+	}
+	75% {
+		transform: rotateZ(-10deg);
+	}
+	100% {
+		transform: rotateZ(0);
+	}
+}

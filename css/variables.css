@@ -1,0 +1,10 @@
+:root {
+	--light-gray: rgba(0, 0, 0, 0.3);
+	--light-white: rgba(255, 255, 255, 0.3);
+	--cornfb: #4384f4;
+	--xlarge: 80px;
+	--large: 30px;
+	--default: 18px;
+	--medium: 15px;
+	--small: 12px;
+}

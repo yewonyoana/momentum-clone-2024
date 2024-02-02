@@ -1,0 +1,27 @@
+#main-box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.container {
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 50px;
+}
+
+.container-vertical {
+	width: 500px;
+	height: 900px;
+}
+
+.container-horizontal {
+	width: 800px;
+	height: 400px;
+}
+
+.container-horizontal:first-child {
+	height: 450px;
+}
