@@ -86,6 +86,7 @@ canvas {
 
 #meme button:hover,
 #meme label:hover {
+	transform: scale(1.2);
 	color: var(--cornfb);
 	background-color: white;
 	box-shadow: 3px 3px 0px 0px var(--cornfb);

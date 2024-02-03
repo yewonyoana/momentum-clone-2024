@@ -8,14 +8,14 @@
 #greeting {
 	font-size: var(--xlarge);
 	font-weight: 800;
+	cursor: pointer;
 }
 
 .nav-btn {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	cursor: pointer;
-	position: relative;
 }
 
 .nav-btn img {
@@ -23,19 +23,25 @@
 }
 
 .btn-text {
+	width: 73px;
+	padding: 5px 0px;
+	border-radius: 15px;
+	border-top-left-radius: 0px;
+	background-color: var(--cornfb);
+	color: white;
+	text-align: center;
 	font-size: var(--medium);
-	color: var(--light-gray);
-	position: absolute;
+}
+
+#default-text:first-child,
+#hover-text:nth-child(2) {
+	margin-right: 3px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 0px;
+}
+
+#hover-text {
 	display: none;
-}
-
-.btn-text {
-	top: 60px;
-	right: -39px;
-}
-
-.nav-btn:first-child .btn-text {
-	right: -17px;
 }
 
 .nav-btn:hover {
@@ -43,7 +49,21 @@
 }
 
 .nav-btn:hover .btn-text {
+	background-color: white;
+}
+
+.nav-btn:hover #default-text {
+	display: none;
+}
+
+.nav-btn:hover #hover-text {
 	display: unset;
+	text-align: end;
+	color: var(--cornfb);
+}
+
+.nav-btn:hover #hover-text:last-child {
+	text-align: start;
 }
 
 @keyframes navBtnRotate {

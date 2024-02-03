@@ -13,6 +13,7 @@
 @import url("components/container.css");
 @import url("components/pomodoro.css");
 @import url("components/work-station.css");
+@import url("components/footer.css");
 
 /* SCREENS */
 @import url("screens/login.css");

@@ -24,7 +24,6 @@
 }
 
 #google {
-	margin-bottom: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -55,6 +54,31 @@
 
 #google input:focus-within {
 	border: 1px solid var(--cornfb);
+}
+
+#websites {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.website {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 65px;
+	height: 65px;
+	border-radius: 10px;
+	margin: 25px 0px;
+}
+
+.website img {
+	width: 45px;
+}
+
+.website:hover {
+	background-color: white;
+	box-shadow: 3px 3px 0px 0px var(--cornfb);
 }
 
 #pomodoro {

@@ -57,13 +57,15 @@
 		<main id="main-page" class="hidden">
 			<div id="greeting-box">
 				<div id="work-btn" class="nav-btn">
+					<div id="default-text" class="btn-text">메모하젠?</div>
+					<div id="hover-text" class="btn-text">CLICK</div>
 					<img src="/images/13.png" />
-					<span class="btn-text">일하맨?</span>
 				</div>
 				<h1 id="greeting"></h1>
 				<div id="play-btn" class="nav-btn">
 					<img src="/images/14.png" />
-					<span class="btn-text">쉬영갑서!</span>
+					<div id="default-text" class="btn-text">쉬영갑서!</div>
+					<div id="hover-text" class="btn-text">CLICK</div>
 				</div>
 			</div>
 
@@ -84,6 +86,99 @@
 							<input type="textarea" placeholder="메모" required />
 						</form>
 						<ul id="memo-list"></ul>
+					</div>
+				</div>
+
+				<div id="work-station">
+					<div id="todo" class="container container-horizontal">
+						<form id="todo-form">
+							<input type="text" placeholder="오늘 할일" required />
+						</form>
+						<ul id="todo-list"></ul>
+					</div>
+
+					<div id="work" class="container container-horizontal">
+						<div class="youtube">
+							<iframe
+								width="460"
+								height="315"
+								src="https://www.youtube.com/embed/G0n-rlbiijw?si=CZxyZpgNkTWWzPW9"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+						</div>
+
+						<div class="work-helpers">
+							<div id="google">
+								<span><i class="fa-brands fa-google fa-2x"></i></span>
+								<form action="https://www.google.com/search">
+									<input
+										type="text"
+										name="q"
+										target="_blank"
+										placeholder="검색" />
+								</form>
+							</div>
+
+							<div id="websites">
+								<div class="website">
+									<a
+										href="https://www.perplexity.ai/"
+										title="퍼플렉시티"
+										target="_blank">
+										<img src="/images/10.png" />
+									</a>
+								</div>
+								<div class="website">
+									<a href="https://github.com/" title="깃허브" target="_blank">
+										<img src="/images/11.png" />
+									</a>
+								</div>
+								<div class="website">
+									<a
+										href="https://nomadcoders.co/"
+										title="노마드코더"
+										target="_blank">
+										<img src="/images/17.png" />
+									</a>
+								</div>
+							</div>
+
+							<div id="pomodoro">
+								<div id="pomodoro-timer">
+									<div class="pomodoro-labels pomodoro-text">
+										<span id="work">시간</span>
+										<span id="cycle">#</span>
+										<span id="break">휴식</span>
+									</div>
+									<div class="pomodoro-labels pomodoro-time">
+										<div id="work-timer">
+											<span id="w_minutes">25</span>
+											<span class="semicolon">:</span>
+											<span id="w_seconds">00</span>
+										</div>
+										<span id="counter">0</span>
+										<div id="break-timer">
+											<span id="b_minutes">5</span>
+											<span class="semicolon">:</span>
+											<span id="b_seconds">00</span>
+										</div>
+									</div>
+									<div class="pomodoro-labels pomodoro-btns">
+										<button id="start">
+											<i class="fa-solid fa-play fa-lg"></i>
+										</button>
+										<button id="stop">
+											<i class="fa-solid fa-pause fa-lg"></i>
+										</button>
+										<button id="reset">
+											<i class="fa-solid fa-rotate-right fa-lg"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -187,87 +282,20 @@
 						</div>
 					</div>
 				</div>
-
-				<div id="work-station">
-					<div id="todo" class="container container-horizontal">
-						<form id="todo-form">
-							<input type="text" placeholder="오늘 할일" required />
-						</form>
-						<ul id="todo-list"></ul>
-					</div>
-
-					<div id="work" class="container container-horizontal">
-						<div class="youtube">
-							<iframe
-								width="460"
-								height="315"
-								src="https://www.youtube.com/embed/G0n-rlbiijw?si=CZxyZpgNkTWWzPW9"
-								title="YouTube video player"
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								allowfullscreen></iframe>
-						</div>
-
-						<div class="work-helpers">
-							<div id="google">
-								<span><i class="fa-brands fa-google fa-2x"></i></span>
-								<form action="https://www.google.com/search">
-									<input
-										type="text"
-										name="q"
-										target="_blank"
-										placeholder="검색" />
-								</form>
-							</div>
-
-							<div id="pomodoro">
-								<div id="pomodoro-timer">
-									<div class="pomodoro-labels pomodoro-text">
-										<span id="work">시간</span>
-										<span id="cycle">#</span>
-										<span id="break">휴식</span>
-									</div>
-									<div class="pomodoro-labels pomodoro-time">
-										<div id="work-timer">
-											<span id="w_minutes">25</span>
-											<span class="semicolon">:</span>
-											<span id="w_seconds">00</span>
-										</div>
-										<span id="counter">0</span>
-										<div id="break-timer">
-											<span id="b_minutes">5</span>
-											<span class="semicolon">:</span>
-											<span id="b_seconds">00</span>
-										</div>
-									</div>
-									<div class="pomodoro-labels pomodoro-btns">
-										<button id="start">
-											<i class="fa-solid fa-play fa-lg"></i>
-										</button>
-										<button id="stop">
-											<i class="fa-solid fa-pause fa-lg"></i>
-										</button>
-										<button id="reset">
-											<i class="fa-solid fa-rotate-right fa-lg"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</section>
 
-			<div id="quote">
-				<span></span>
-				<span></span>
-			</div>
+			<footer>
+				<div id="quote">
+					<span></span>
+					<span></span>
+				</div>
 
-			<div id="logout">
-				<img class="logout-img" src="/images/15.png" />
-				<img class="logout-img logout-img__hover" src="/images/16.png" />
-				<span class="logout-text">또옵서</span>
-			</div>
+				<div id="logout">
+					<img class="logout-img" src="/images/15.png" />
+					<img class="logout-img logout-img__hover" src="/images/16.png" />
+					<span class="logout-text">또옵서</span>
+				</div>
+			</footer>
 		</main>
 
 		<script

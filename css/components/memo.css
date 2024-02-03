@@ -16,16 +16,28 @@
 
 #memo-list {
 	height: 95%;
-	margin: 10px 10px;
+	margin: 10px 0px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 }
 
 #memo-list li {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	height: max-content;
+	background-color: white;
+	border-radius: 20px;
 	text-transform: none;
 	margin-bottom: 8px;
 	font-size: var(--default);
+}
+
+#memo-list li > span {
+	overflow-wrap: break-word;
 }
 
 #memo-list button {
@@ -34,6 +46,7 @@
 	font-size: var(--small);
 	color: var(--light-gray);
 	cursor: pointer;
+	text-align: end;
 }
 
 #memo-list button:hover {
