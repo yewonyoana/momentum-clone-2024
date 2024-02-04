@@ -2,22 +2,22 @@
 @import url("variables.css");
 
 /* COMPONENTS */
-@import url("components/greeting.css");
-@import url("components/logout.css");
-@import url("components/quotes.css");
-@import url("components/clock-date.css");
-@import url("components/todo.css");
-@import url("components/meme.css");
-@import url("components/memo.css");
-@import url("components/weather.css");
-@import url("components/container.css");
-@import url("components/pomodoro.css");
-@import url("components/work-station.css");
-@import url("components/footer.css");
+@import url("./components/greeting.css");
+@import url("./components/logout.css");
+@import url("./components/quotes.css");
+@import url("./components/clock-date.css");
+@import url("./components/todo.css");
+@import url("./components/meme.css");
+@import url("./components/memo.css");
+@import url("./components/weather.css");
+@import url("./components/container.css");
+@import url("./components/pomodoro.css");
+@import url("./components/work-station.css");
+@import url("./components/footer.css");
 
 /* SCREENS */
-@import url("screens/login.css");
-@import url("screens/main-page.css");
+@import url("./screens/login.css");
+@import url("./screens/main-page.css");
 
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;600;900&display=swap");
