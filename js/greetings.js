@@ -26,12 +26,13 @@ function onLoginSubmit(event) {
 function showSplashScreen() {
 	splashScreen.style.backgroundColor = "white";
 	splashScreen.classList.remove(HIDDEN_CLASSNAME);
-	// splashScreen.style.animation = "fadeIn 1s";
+	splashScreen.style.animation = "fadeIn 1s";
 	setTimeout(hideSplashScreen);
 }
 
 function hideSplashScreen() {
-	// splashScreen.style.animation = "fadeOut 1s";
+	splashScreen.style.backgroundColor = "white";
+	splashScreen.style.animation = "fadeOut 2s";
 	setTimeout(() => {
 		splashScreen.classList.add(HIDDEN_CLASSNAME);
 	}, 1000);
