@@ -35,13 +35,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	background-color: white;
 	color: black;
 	font-size: var(--default);
-}
-
-body > img {
-	width: 75%;
 }
 
 .hidden,

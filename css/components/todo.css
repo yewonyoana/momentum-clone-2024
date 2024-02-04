@@ -14,8 +14,12 @@
 	color: var(--light-gray);
 }
 
+#todo input:focus-within {
+	border: 1px solid var(--cornfb);
+}
+
 #todo-list {
-	height: 95%;
+	height: 90%;
 	margin: 10px 10px;
 	display: flex;
 	flex-direction: column;

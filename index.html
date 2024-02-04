@@ -55,29 +55,34 @@
 		</section>
 
 		<main id="main-page" class="hidden">
-			<div id="greeting-box">
-				<div id="work-btn" class="nav-btn">
-					<div id="default-text" class="btn-text">메모하젠?</div>
-					<div id="hover-text" class="btn-text">CLICK</div>
-					<img src="/images/13.png" />
+			<header>
+				<div id="greeting-box">
+					<div id="work-btn" class="nav-btn">
+						<div id="default-text" class="btn-text">CLICK</div>
+						<div id="hover-text" class="btn-text">메모하젠?</div>
+						<img src="/images/13.png" />
+					</div>
+					<div id="greeting-name">
+						<h1 id="greeting"></h1>
+						<img src="/images/18.png" id="greeting-img" />
+					</div>
+					<div id="play-btn" class="nav-btn">
+						<img src="/images/14.png" />
+						<div id="default-text" class="btn-text">CLICK</div>
+						<div id="hover-text" class="btn-text">쉬영갑서!</div>
+					</div>
 				</div>
-				<h1 id="greeting"></h1>
-				<div id="play-btn" class="nav-btn">
-					<img src="/images/14.png" />
-					<div id="default-text" class="btn-text">쉬영갑서!</div>
-					<div id="hover-text" class="btn-text">CLICK</div>
+
+				<div id="weather">
+					<span></span>
+					<span></span>
 				</div>
-			</div>
 
-			<div id="weather">
-				<span></span>
-				<span></span>
-			</div>
-
-			<div id="time-date">
-				<h2 id="clock"></h2>
-				<h2 id="date"></h2>
-			</div>
+				<div id="time-date">
+					<h2 id="clock"></h2>
+					<h2 id="date"></h2>
+				</div>
+			</header>
 
 			<section id="main-box">
 				<div id="memo-box" class="switch">
@@ -92,7 +97,7 @@
 				<div id="work-station">
 					<div id="todo" class="container container-horizontal">
 						<form id="todo-form">
-							<input type="text" placeholder="오늘 할일" required />
+							<input type="text" placeholder="오늘 할 일" required />
 						</form>
 						<ul id="todo-list"></ul>
 					</div>
@@ -147,31 +152,31 @@
 
 							<div id="pomodoro">
 								<div id="pomodoro-timer">
-									<div class="pomodoro-labels pomodoro-text">
-										<span id="work">시간</span>
-										<span id="cycle">#</span>
-										<span id="break">휴식</span>
-									</div>
 									<div class="pomodoro-labels pomodoro-time">
-										<div id="work-timer">
+										<span id="work" class="pomodoro-text">시간</span>
+										<div class="pomodoro-function">
 											<span id="w_minutes">25</span>
 											<span class="semicolon">:</span>
 											<span id="w_seconds">00</span>
 										</div>
-										<span id="counter">0</span>
-										<div id="break-timer">
+										<button id="start">
+											<i class="fa-solid fa-play fa-lg"></i>
+										</button>
+									</div>
+									<div class="pomodoro-labels pomodoro-cycle">
+										<span id="cycle" class="pomodoro-text">#</span>
+										<span class="pomodoro-function">0</span>
+										<button id="stop">
+											<i class="fa-solid fa-pause fa-lg"></i>
+										</button>
+									</div>
+									<div class="pomodoro-labels pomodoro-break">
+										<span id="break" class="pomodoro-text">휴식</span>
+										<div class="pomodoro-function">
 											<span id="b_minutes">5</span>
 											<span class="semicolon">:</span>
 											<span id="b_seconds">00</span>
 										</div>
-									</div>
-									<div class="pomodoro-labels pomodoro-btns">
-										<button id="start">
-											<i class="fa-solid fa-play fa-lg"></i>
-										</button>
-										<button id="stop">
-											<i class="fa-solid fa-pause fa-lg"></i>
-										</button>
 										<button id="reset">
 											<i class="fa-solid fa-rotate-right fa-lg"></i>
 										</button>

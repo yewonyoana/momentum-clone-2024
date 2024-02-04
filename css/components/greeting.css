@@ -1,14 +1,41 @@
+header {
+	background-color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
 #greeting-box {
 	width: 50%;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
+	padding-top: 30px;
+}
+
+#greeting-name {
+	cursor: pointer;
 }
 
 #greeting {
 	font-size: var(--xlarge);
 	font-weight: 800;
 	cursor: pointer;
+}
+
+#greeting-img {
+	width: 170px;
+	display: none;
+}
+
+#greeting-name:hover #greeting {
+	display: none;
+}
+
+#greeting-name:hover #greeting-img {
+	display: unset;
 }
 
 .nav-btn {
@@ -35,7 +62,7 @@
 
 #default-text:first-child,
 #hover-text:nth-child(2) {
-	margin-right: 3px;
+	margin-right: 5px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 0px;
 }

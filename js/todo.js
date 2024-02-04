@@ -29,7 +29,7 @@ function paintToDo(newToDo) {
 	li.id = newToDo.id;
 	const span = document.createElement("span");
 	// change text of the span to the to do
-	span.innerText = `✳ ${newToDo.text}`;
+	span.innerText = `🫧 ${newToDo.text}`;
 	// adding delete button
 	const button = document.createElement("button");
 	button.innerText = "✓";

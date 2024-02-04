@@ -1,4 +1,4 @@
-const mainBox = document.querySelector("#main-box");
+const mainBox = document.querySelector("body");
 
 const images = [
 	"02.jpeg",
@@ -24,7 +24,7 @@ const todaysImage = images[Math.floor(Math.random() * images.length)];
 
 // 2. changing background of an element inside the body
 function changeMainBackgroundImg() {
-	mainBox.style.background = `url(/images/${todaysImage}) center/cover no-repeat`;
+	mainBox.style.background = `center/cover no-repeat url(/images/${todaysImage})`;
 }
 
 changeMainBackgroundImg();

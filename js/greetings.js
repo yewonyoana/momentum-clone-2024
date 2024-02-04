@@ -24,16 +24,17 @@ function onLoginSubmit(event) {
 }
 
 function showSplashScreen() {
+	splashScreen.style.backgroundColor = "white";
 	splashScreen.classList.remove(HIDDEN_CLASSNAME);
-	splashScreen.style.animation = "fadeIn 1s";
+	// splashScreen.style.animation = "fadeIn 1s";
 	setTimeout(hideSplashScreen);
 }
 
 function hideSplashScreen() {
-	splashScreen.style.animation = "fadeOut 2s";
+	// splashScreen.style.animation = "fadeOut 1s";
 	setTimeout(() => {
 		splashScreen.classList.add(HIDDEN_CLASSNAME);
-	}, 1500);
+	}, 1000);
 }
 
 // for showing greeting

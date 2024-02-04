@@ -1,6 +1,6 @@
 const workBtn = document.querySelector("#work-btn");
 const playBtn = document.querySelector("#play-btn");
-const nameBtn = document.querySelector("#greeting");
+const nameBtn = document.querySelector("#greeting-name");
 const memoBox = document.querySelector("#memo-box");
 const memeBox = document.querySelector("#meme-box");
 

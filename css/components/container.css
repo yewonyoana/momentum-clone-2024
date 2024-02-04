@@ -13,15 +13,15 @@
 }
 
 .container-vertical {
-	width: 500px;
-	height: 900px;
+	width: 480px;
+	height: 820px;
 }
 
 .container-horizontal {
-	width: 800px;
-	height: 400px;
+	width: 750px;
+	height: 380px;
 }
 
 .container-horizontal:first-child {
-	height: 450px;
+	height: 400px;
 }
