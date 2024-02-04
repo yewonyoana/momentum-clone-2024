@@ -9,7 +9,7 @@ section {
 }
 
 section:first-child {
-	background: center/cover no-repeat url("//images/00.gif");
+	background: center/cover no-repeat url("/./images/00.gif");
 }
 
 .ticket {
